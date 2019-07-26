@@ -5,13 +5,13 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Login</title>
 </head>
 
 <body>
 	<form:form action="authenticate" method="post" modelAttribute="user">
-		User: <form:input path="email" />
-		Password:<form:input path="password" />
+		User: <form:input path="email" type="email" /><br>
+		Password:<form:input path="password" type="password"/><br>
 		<input type="submit" value="Login"/>
 	</form:form>
 </body>
